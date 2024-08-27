@@ -1,0 +1,181 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contanir{
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+
+.form{
+background-color: #eee;
+border-radius: 6px;
+padding: 20px;
+display: flex;
+align-items: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  .container {
+    width: 90%; 
+    max-width: 500px; 
+    margin: 20px auto;
+  }
+  
+  .form {
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* السماح بالتفاف العناصر */
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+    min-width: 0; /* لمنع مشاكل التمدد في flex */
+    margin-bottom: 10px; /* إضافة هامش سفلي للمسافات */
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .add {
+    border: none;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .tasks {
+    background-color: #eee;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+  }
+  
+  .tasks .task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  
+  .tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .tasks .task:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .tasks .task .done {
+    opacity: 0.5;
+  }
+  
+  .tasks .task span {
+    font-weight: bold;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* استعلامات الوسائط لجعل التصميم متجاوبًا */
+  @media (max-width: 768px) {
+    .form {
+      flex-direction: column; /* تغيير اتجاه العناصر ليكون عمودياً على الشاشات الصغيرة */
+    }
+  
+    .add {
+      margin-left: 0; /* إزالة الهامش الأيسر */
+      margin-top: 10px; /* إضافة هامش علوي */
+    }
+  }
+  
+
+.input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+}
+.input:focus {
+    outline: none;
+  }
+
+  .add{
+    border: none;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .tasks{
+    background-color: #eee;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 20px;
+  }
+
+  .tasks .task {
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+   transition: 0.4s; 
+  }
+
+
+  .tasks .task:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .tasks .task:hover {
+    background-color: #d85656;
+    color: #fff;
+  }
+  
+  .tasks .task .done {
+    opacity: 0.5;
+  }
+
+  .tasks .task span {
+    font-weight: bold;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
